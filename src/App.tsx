@@ -1,2 +1,7 @@
-const App = () => { return <div>스타터킷이 정상 구동되었습니다.</div>; }
+import Sample from "@/components/Sample";
+
+const App = () => { 
+    return <Sample/>; 
+}
+
 export default App;

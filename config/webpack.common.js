@@ -17,7 +17,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: `${path.resolve(__dirname, "../src/public")}/index.html`,
+      template: "public/index.html",
     }),
     new webpack.ProvidePlugin({
       React: "react",
@@ -25,7 +25,7 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "..src/"),
+      "@": path.resolve(__dirname, "../src/"),
     },
     extensions: [".js", ".ts", ".jsx", ".tsx", ".css", ".json"],
   },
